@@ -56,7 +56,7 @@ mvnOpts="${mvnOpts} ${MAVEN_CUSTOM_GOALS:-"clean dependency:list install"}"
 
 cp -r $CACHE_DIR/.maven $BUILD_DIR
 export PATH="$BUILD_DIR/.maven/bin":$PATH
-
+echo $PATH
 #status "Executing: mvn ${mvnOpts}"
 #$CACHE_DIR/.maven/bin/mvn -DoutputFile=target/mvn-dependency-list.log ${mvnOpts} | indent
 
