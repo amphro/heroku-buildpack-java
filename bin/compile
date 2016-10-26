@@ -57,8 +57,8 @@ mvnOpts="${mvnOpts} ${MAVEN_CUSTOM_GOALS:-"clean dependency:list install"}"
 #status "Executing: mvn ${mvnOpts}"
 #$CACHE_DIR/.maven/bin/mvn -DoutputFile=target/mvn-dependency-list.log ${mvnOpts} | indent
 
-if [ "${PIPESTATUS[*]}" != "0 0" ]; then
-  error "Failed to build app with Maven
-We're sorry this build is failing! If you can't find the issue in application code,
-please submit a ticket so we can help: https://help.heroku.com/"
-fi
+#if [ "${PIPESTATUS[*]}" != "0 0" ]; then
+#  error "Failed to build app with Maven
+#We're sorry this build is failing! If you can't find the issue in application code,
+#please submit a ticket so we can help: https://help.heroku.com/"
+#fi
